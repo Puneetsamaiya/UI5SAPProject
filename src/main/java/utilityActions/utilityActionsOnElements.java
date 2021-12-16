@@ -1,6 +1,8 @@
 package utilityActions;
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +35,25 @@ public class utilityActionsOnElements {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.elementToBeClickable(findBy));
 	}
+	
+	public String getTitleOfThePage() {
+		return driver.getTitle();
+	}
+	
+	
+	public String switchToChildWindowShoppingPage() throws InterruptedException {
+		//String mainwindowhandle = driver.getWindowHandle();
+		Set<String> str = driver.getWindowHandles();
+		Iterator<String> itr = str.iterator();
+		itr.next();
+		String cw=itr.next();
+		//Thread.sleep(5000);
+		driver.switchTo().window(cw);
+		//Thread.sleep(5000);
+		//System.out.println(cw);
+		return driver.getTitle();
+	}
+	
 	
 
 	public void quitBrowser()  throws InterruptedException {

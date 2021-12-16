@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T14:35:45 IST" name="Default suite" finished-at="2021-12-16T14:36:03 IST" duration-ms="18201">
+  <suite started-at="2021-12-16T16:29:22 IST" name="Default suite" finished-at="2021-12-16T16:29:49 IST" duration-ms="27383">
     <groups>
     </groups>
-    <test started-at="2021-12-16T14:35:45 IST" name="Default test" finished-at="2021-12-16T14:36:03 IST" duration-ms="18201">
+    <test started-at="2021-12-16T16:29:22 IST" name="Default test" finished-at="2021-12-16T16:29:49 IST" duration-ms="27383">
       <class name="sapProject.testComponents.Launchpad">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sapProject.testComponents.Launchpad@3162743f]" started-at="2021-12-16T14:35:45 IST" name="setup" finished-at="2021-12-16T14:35:49 IST" duration-ms="3760" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:22 IST" name="setup" finished-at="2021-12-16T16:29:25 IST" duration-ms="3704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="launchTest()[pri:0, instance:sapProject.testComponents.Launchpad@3162743f]" started-at="2021-12-16T14:35:49 IST" name="launchTest" finished-at="2021-12-16T14:35:53 IST" duration-ms="4089" status="PASS">
+        <test-method signature="launchTest()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:26 IST" name="launchTest" finished-at="2021-12-16T16:29:39 IST" duration-ms="13312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sapProject.testComponents.Launchpad@3162743f]" started-at="2021-12-16T14:35:53 IST" name="tearDown" finished-at="2021-12-16T14:36:03 IST" duration-ms="10281" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:39 IST" name="tearDown" finished-at="2021-12-16T16:29:49 IST" duration-ms="10299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
