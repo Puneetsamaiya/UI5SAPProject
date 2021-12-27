@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sapProject.testComponents.Launchpad">
+      <class name="com.SAPUI5.testcases.ShoppingPageTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="launchTest"/>
+          <include name="verifyShoppingWelcomeText"/>
         </methods>
-      </class> <!-- sapProject.testComponents.Launchpad -->
+      </class> <!-- com.SAPUI5.testcases.ShoppingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

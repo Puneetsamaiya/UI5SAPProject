@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T16:29:22 IST" name="Default suite" finished-at="2021-12-16T16:29:49 IST" duration-ms="27383">
+  <suite started-at="2021-12-24T16:53:40 IST" name="SAP Project UI5 Web Application Shopping Cart Test Suite" finished-at="2021-12-24T16:54:17 IST" duration-ms="37022">
     <groups>
     </groups>
-    <test started-at="2021-12-16T16:29:22 IST" name="Default test" finished-at="2021-12-16T16:29:49 IST" duration-ms="27383">
-      <class name="sapProject.testComponents.Launchpad">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:22 IST" name="setup" finished-at="2021-12-16T16:29:25 IST" duration-ms="3704" status="PASS">
+    <test started-at="2021-12-24T16:53:40 IST" name="Shopping Cart UI5 App Test" finished-at="2021-12-24T16:54:17 IST" duration-ms="37022">
+      <class name="com.SAPUI5.testcases.ShoppingPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:53:48 IST" name="setup" finished-at="2021-12-24T16:53:59 IST" duration-ms="10517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="launchTest()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:26 IST" name="launchTest" finished-at="2021-12-16T16:29:39 IST" duration-ms="13312" status="PASS">
+        <test-method signature="verifyShoppingWelcomeText()[pri:1, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:53:59 IST" name="verifyShoppingWelcomeText" finished-at="2021-12-24T16:54:02 IST" duration-ms="3239" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sapProject.testComponents.Launchpad@6cf31447]" started-at="2021-12-16T16:29:39 IST" name="tearDown" finished-at="2021-12-16T16:29:49 IST" duration-ms="10299" status="PASS">
+        </test-method> <!-- verifyShoppingWelcomeText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:54:02 IST" name="tearDown" finished-at="2021-12-24T16:54:03 IST" duration-ms="1143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- sapProject.testComponents.Launchpad -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:54:03 IST" name="setup" finished-at="2021-12-24T16:54:16 IST" duration-ms="12494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitleOfThePage()[pri:2, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:54:16 IST" name="verifyTitleOfThePage" finished-at="2021-12-24T16:54:17 IST" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SAPUI5.testcases.ShoppingPageTest@359f7cdf]" started-at="2021-12-24T16:54:17 IST" name="tearDown" finished-at="2021-12-24T16:54:17 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SAPUI5.testcases.ShoppingPageTest -->
+      <class name="com.SAPUI5.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.SAPUI5.testcases.HomePageTest@5119fb47]" started-at="2021-12-24T16:53:40 IST" name="setup" finished-at="2021-12-24T16:53:48 IST" duration-ms="7871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateHomePageTitle()[pri:0, instance:com.SAPUI5.testcases.HomePageTest@5119fb47]" started-at="2021-12-24T16:53:48 IST" name="validateHomePageTitle" finished-at="2021-12-24T16:53:48 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SAPUI5.testcases.HomePageTest@5119fb47]" started-at="2021-12-24T16:53:48 IST" name="tearDown" finished-at="2021-12-24T16:53:48 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SAPUI5.testcases.HomePageTest -->
+    </test> <!-- Shopping Cart UI5 App Test -->
+  </suite> <!-- SAP Project UI5 Web Application Shopping Cart Test Suite -->
 </testng-results>

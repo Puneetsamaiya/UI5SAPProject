@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SAP Project UI5 Web Application Shopping Cart Test Suite">
+	<test name="Shopping Cart UI5 App Test">
+		<classes>
+			<class name="com.SAPUI5.testcases.HomePageTest"></class>
+			<class name="com.SAPUI5.testcases.ShoppingPageTest"></class>
+			
+		</classes>
+	</test>
+</suite>
