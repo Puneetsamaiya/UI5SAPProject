@@ -27,10 +27,21 @@ public class HomePageTest extends TestBase{
 		homePageObj = new HomePage();
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void validateHomePageTitle() {
 		String actualTitle= driver.getTitle();
 		Assert.assertEquals(actualTitle, "SAPUI5 SDK - Demo Kit");
+	}
+	
+	@Test(priority = 1)
+	public void validateCartImage() {
+		Assert.assertTrue(homePageObj.validateCartIconImage());
+		
+	}
+	
+	@Test(priority = 3)
+	public void validateClassicText() {
+		Assert.assertTrue(homePageObj.validateClassicText());
 	}
 	
 	@AfterMethod

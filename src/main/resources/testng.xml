@@ -5,7 +5,7 @@
 		<classes>
 			<class name="com.SAPUI5.testcases.HomePageTest"></class>
 			<class name="com.SAPUI5.testcases.ShoppingPageTest"></class>
-			
+			<class name="com.SAPUI5.testcases.CategoriesPageTest"></class>
 		</classes>
 	</test>
 </suite>

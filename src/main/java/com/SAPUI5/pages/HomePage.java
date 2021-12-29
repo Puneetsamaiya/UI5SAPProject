@@ -16,10 +16,13 @@ public class HomePage extends TestBase{
 	@FindBy (id = "__button6-BDI-content")
 	WebElement acceptAll_button;
 	
+	@FindBy (id = "__icon0")WebElement cartIcon;
+	@FindBy(xpath = "//span[contains(text(),'The classic business process of finding and ordering products')]")WebElement classicText;
+	
 	//Initializing the page objects
 	public HomePage() {
 		
-		PageFactory.initElements(driver, this);  // driver is coming from Base class
+		PageFactory.initElements(driver, this);  // driver is coming from TBase class
 	}
 	
 	//Actions
@@ -33,5 +36,13 @@ public class HomePage extends TestBase{
 	
 	public void clickOnShoppingCartLink() {
 		shoppingCartLink.click();
+	}
+	
+	public boolean validateCartIconImage() {
+		return cartIcon.isDisplayed();
+	}
+	
+	public boolean validateClassicText() {
+		return classicText.isDisplayed();
 	}
 }
