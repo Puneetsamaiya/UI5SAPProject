@@ -60,5 +60,9 @@ public class TestUtil extends TestBase{
 		//System.out.println(cw);
 		
 	}
+	
+	public void clickOnButton(WebElement we) {
+		we.click();
+	}
 
 }

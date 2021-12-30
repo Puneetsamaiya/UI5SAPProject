@@ -10,6 +10,7 @@ import com.SAPUI5.base.TestBase;
 
 public class CategoriesPage extends TestBase{
 
+		
 	@FindBy(xpath="//div[contains(text(),'Graphics Card')]")
 	public WebElement GraphicsCardItems;
 	
@@ -36,7 +37,29 @@ public class CategoriesPage extends TestBase{
 	
 	@FindBy(id ="container-cart---category--page-navButton")
 	public WebElement backButton;
+	
+	@FindBy(xpath = "//div[text()='Mice']")
+	public WebElement miceItemElement;
 
+	@FindBy(xpath = "//div[text()='Telecommunication']")
+	public WebElement telecommunicationElement;
+	
+	
+	@FindBy(xpath = "//span[text()= 'Wireless DSL Router / Repeater' and @id ='__item5-container-cart---category--productList-1-titleText-inner']")
+	public WebElement TelecomProductWirelessDSLRouter;
+	
+	@FindBy(id ="__button10-BDI-content")
+	public WebElement addToCartButton;
+	
+	@FindBy(xpath ="//div[contains(text(), 'added to your')]")
+	public WebElement msg;
+	
+	@FindBy(id="__button9-img")
+	public WebElement CartIcon;
+	
+	@FindBy(id = "container-cart---cartView--proceedButton-BDI-content")
+	public WebElement Proceed;
+	
 	public CategoriesPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -59,11 +82,13 @@ public class CategoriesPage extends TestBase{
 		return listOfEachIteam.size();
 	}
 	
-	public void clickOnGraphicsCardItem() {
-		GraphicsCardItems.click();
-	}
-	
+
 	public void clickOnBackButton() {
 		backButton.click();
 	}
+	
+	public void clickOnCategoryItem(WebElement we) {
+		we.click();
+	}
+	
 }

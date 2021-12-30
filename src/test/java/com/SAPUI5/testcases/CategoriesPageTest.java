@@ -10,29 +10,29 @@ import com.SAPUI5.pages.CategoriesPage;
 import com.SAPUI5.pages.HomePage;
 import com.SAPUI5.utilityActions.TestUtil;
 
-public class CategoriesPageTest extends TestBase{
+public class CategoriesPageTest extends TestBase {
 
-	//ShoppingPage shopPageObj;
+	// ShoppingPage shopPageObj;
 	HomePage homePageObj;
 	TestUtil testUtilObj;
-	CategoriesPage categoriesPageObj; 
-	
+	CategoriesPage categoriesPageObj;
+
 	public CategoriesPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setup() throws InterruptedException {
-		
+
 		initialization();
 		homePageObj = new HomePage();
 		testUtilObj = new TestUtil();
 		homePageObj.clickOnPopUp();
 		homePageObj.clickOnShoppingCartLink();
 		testUtilObj.switchToChildWindowShoppingPage();
-		categoriesPageObj = new CategoriesPage(); 
-	}  
-	
+		categoriesPageObj = new CategoriesPage();
+	}
+
 	/*
 	 * @Test public void countOfCategoryItem() {
 	 * 
@@ -43,25 +43,56 @@ public class CategoriesPageTest extends TestBase{
 	 * System.out.print(categoriesPageObj.toPrintEachItemTitle(i)+" ");
 	 * System.out.println(categoriesPageObj.toPrintEachItemTitleCount(i)); } }
 	 */
-	
+
 	@Test(priority = 1)
 	public void clickOnCategoryItem() throws InterruptedException {
-		testUtilObj.waitForElementToBeVisible(categoriesPageObj.GraphicsCardItems);
-		categoriesPageObj.clickOnGraphicsCardItem();
-		testUtilObj.waitForElementToBeVisible(categoriesPageObj.backButton);
+		/*
+		 * testUtilObj.waitForElementToBeVisible(categoriesPageObj.GraphicsCardItems);
+		 * //categoriesPageObj.clickOnGraphicsCardItem();
+		 * categoriesPageObj.clickOnCategoryItem(categoriesPageObj.GraphicsCardItems);
+		 * testUtilObj.waitForElementToBeVisible(categoriesPageObj.backButton);
+		 * categoriesPageObj.clickOnBackButton();
+		 * 
+		 * categoriesPageObj.clickOnCategoryItem(categoriesPageObj.miceItemElement);
+		 * testUtilObj.waitForElementToBeVisible(categoriesPageObj.backButton);
+		 * categoriesPageObj.clickOnBackButton();
+		 */
+
+		
+		//adding telecommunication product into cart and proceeding to checkout page
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.telecommunicationElement);
+		categoriesPageObj.clickOnCategoryItem(categoriesPageObj.telecommunicationElement);
+		
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.TelecomProductWirelessDSLRouter);
+		categoriesPageObj.clickOnCategoryItem(categoriesPageObj.TelecomProductWirelessDSLRouter);
+		
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.addToCartButton);
+		testUtilObj.clickOnButton(categoriesPageObj.addToCartButton);
 		categoriesPageObj.clickOnBackButton();
+		
+
+		
+		
+		
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.msg);
+		testUtilObj.clickOnButton(categoriesPageObj.CartIcon);
+		
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.Proceed);
+		testUtilObj.clickOnButton(categoriesPageObj.Proceed);
 	}
-	
-	/*
-	 * @Test(priority = 2) 
-	 * public void clickOnBackCategory() {
-	 * categoriesPageObj.clickOnBackButton(); }
-	 */	
-	
-	
+
+//	@Test(priority = 2)
+//	public void addToCartMethod(){
+//		testUtilObj.clickOnButton(categoriesPageObj.addToCartButton);
+//		testUtilObj.waitForElementToBeVisible(categoriesPageObj.msg);
+//		testUtilObj.clickOnButton(categoriesPageObj.CartIcon);
+//		testUtilObj.waitForElementToBeVisible(categoriesPageObj.Proceed);
+//		testUtilObj.clickOnButton(categoriesPageObj.Proceed);
+//	}
+
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
+		// driver.quit();
 		System.out.println("done");
 	}
 }

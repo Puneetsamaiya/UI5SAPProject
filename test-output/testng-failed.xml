@@ -5,7 +5,7 @@
     <classes>
       <class name="com.SAPUI5.testcases.CategoriesPageTest">
         <methods>
-          <include name="clickOnCategoryItem"/>
+          <include name="addToCartMethod"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
