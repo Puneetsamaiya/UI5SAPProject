@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-30T17:04:45 IST" name="Default suite" finished-at="2021-12-30T17:05:08 IST" duration-ms="23225">
+  <suite started-at="2021-12-30T18:12:15 IST" name="Default suite" finished-at="2021-12-30T18:12:41 IST" duration-ms="25941">
     <groups>
     </groups>
-    <test started-at="2021-12-30T17:04:45 IST" name="Default test" finished-at="2021-12-30T17:05:08 IST" duration-ms="23225">
+    <test started-at="2021-12-30T18:12:15 IST" name="Default test" finished-at="2021-12-30T18:12:41 IST" duration-ms="25941">
       <class name="com.SAPUI5.testcases.CategoriesPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T17:04:45 IST" name="setup" finished-at="2021-12-30T17:05:01 IST" duration-ms="15567" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T18:12:16 IST" name="setup" finished-at="2021-12-30T18:12:29 IST" duration-ms="13268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnCategoryItem()[pri:1, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T17:05:01 IST" name="clickOnCategoryItem" finished-at="2021-12-30T17:05:08 IST" duration-ms="7589" status="PASS">
+        <test-method signature="clickOnCategoryItem()[pri:1, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T18:12:29 IST" name="clickOnCategoryItem" finished-at="2021-12-30T18:12:41 IST" duration-ms="12607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnCategoryItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T17:05:08 IST" name="tearDown" finished-at="2021-12-30T17:05:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SAPUI5.testcases.CategoriesPageTest@1ea9f6af]" started-at="2021-12-30T18:12:41 IST" name="tearDown" finished-at="2021-12-30T18:12:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

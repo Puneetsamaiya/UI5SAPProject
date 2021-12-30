@@ -60,6 +60,10 @@ public class CategoriesPage extends TestBase{
 	@FindBy(id = "container-cart---cartView--proceedButton-BDI-content")
 	public WebElement Proceed;
 	
+	@FindBy(xpath = "//span[text()='Designer Mousepad']")
+	public WebElement Mousepad;
+	
+	
 	public CategoriesPage() {
 		PageFactory.initElements(driver, this);
 	}

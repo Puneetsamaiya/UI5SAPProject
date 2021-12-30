@@ -59,7 +59,7 @@ public class CategoriesPageTest extends TestBase {
 		 */
 
 		
-		//adding telecommunication product into cart and proceeding to checkout page
+		//adding Telecommunication product into cart and proceeding to checkout page
 		testUtilObj.waitForElementToBeVisible(categoriesPageObj.telecommunicationElement);
 		categoriesPageObj.clickOnCategoryItem(categoriesPageObj.telecommunicationElement);
 		
@@ -70,10 +70,16 @@ public class CategoriesPageTest extends TestBase {
 		testUtilObj.clickOnButton(categoriesPageObj.addToCartButton);
 		categoriesPageObj.clickOnBackButton();
 		
+		// Mice Item to add into cart
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.miceItemElement);
+		categoriesPageObj.clickOnCategoryItem(categoriesPageObj.miceItemElement);
+		
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.Mousepad);
+		categoriesPageObj.clickOnCategoryItem(categoriesPageObj.Mousepad);
+		testUtilObj.waitForElementToBeVisible(categoriesPageObj.addToCartButton);
+		testUtilObj.clickOnButton(categoriesPageObj.addToCartButton);
+		
 
-		
-		
-		
 		testUtilObj.waitForElementToBeVisible(categoriesPageObj.msg);
 		testUtilObj.clickOnButton(categoriesPageObj.CartIcon);
 		
