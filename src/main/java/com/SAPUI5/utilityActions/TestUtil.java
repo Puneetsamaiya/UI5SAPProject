@@ -64,5 +64,9 @@ public class TestUtil extends TestBase{
 	public void clickOnButton(WebElement we) {
 		we.click();
 	}
+	
+	public boolean textIsVisible(WebElement we) {
+		return we.isDisplayed();
+	}
 
 }

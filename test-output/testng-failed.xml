@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SAPUI5.testcases.CategoriesPageTest">
+      <class name="com.SAPUI5.testcases.CheckoutPageTest">
         <methods>
-          <include name="addToCartMethod"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="validateCheckOutText"/>
         </methods>
-      </class> <!-- com.SAPUI5.testcases.CategoriesPageTest -->
+      </class> <!-- com.SAPUI5.testcases.CheckoutPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
