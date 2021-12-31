@@ -5,7 +5,9 @@
     <classes>
       <class name="com.SAPUI5.testcases.CheckoutPageTest">
         <methods>
-          <include name="validateCheckOutText"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateCheckOutTextTest"/>
         </methods>
       </class> <!-- com.SAPUI5.testcases.CheckoutPageTest -->
     </classes>

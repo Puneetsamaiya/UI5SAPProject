@@ -1,6 +1,8 @@
 package com.SAPUI5.testcases;
 
 import org.junit.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.SAPUI5.base.TestBase;
@@ -21,6 +23,7 @@ public class CheckoutPageTest extends TestBase{
 	CheckoutPage checkOutPageObj;
 	CategoriesPageTest categoryTestObj;
 	
+	@BeforeMethod
 	public void setup() throws InterruptedException {
 		initialization();
 		checkOutPageObj = new CheckoutPage();
@@ -34,13 +37,14 @@ public class CheckoutPageTest extends TestBase{
 	}
 	
 	@Test
-	public void validateCheckOutText() throws InterruptedException {
+	public void validateCheckOutTextTest() throws InterruptedException {
 	
 		categoryTestObj.clickOnCategoryItem();
 		testUtilObj.waitForElementToBeVisible(checkOutPageObj.checkoutText);
 		Assert.assertTrue(testUtilObj.textIsVisible(checkOutPageObj.checkoutText));
 	}
 	
+	@AfterMethod
 	public void tearDown() {
 		System.out.println("checkOutPageDone");
 	}

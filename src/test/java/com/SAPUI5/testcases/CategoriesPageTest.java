@@ -1,5 +1,6 @@
 package com.SAPUI5.testcases;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -7,6 +8,8 @@ import org.testng.annotations.Test;
 
 import com.SAPUI5.base.TestBase;
 import com.SAPUI5.pages.CategoriesPage;
+import com.SAPUI5.pages.CheckoutPage;
+import com.SAPUI5.pages.EditItemsFromCart;
 import com.SAPUI5.pages.HomePage;
 import com.SAPUI5.utilityActions.TestUtil;
 
@@ -16,7 +19,9 @@ public class CategoriesPageTest extends TestBase {
 	HomePage homePageObj;
 	TestUtil testUtilObj;
 	CategoriesPage categoriesPageObj;
-
+	CheckoutPage checkOutPageObj;
+	EditItemsFromCart editItemsObj;
+	
 	public CategoriesPageTest() {
 		super();
 	}
@@ -31,6 +36,8 @@ public class CategoriesPageTest extends TestBase {
 		homePageObj.clickOnShoppingCartLink();
 		testUtilObj.switchToChildWindowShoppingPage();
 		categoriesPageObj = new CategoriesPage();
+		checkOutPageObj = new CheckoutPage();
+		editItemsObj = new EditItemsFromCart();
 	}
 
 	/*
@@ -85,6 +92,16 @@ public class CategoriesPageTest extends TestBase {
 		
 		testUtilObj.waitForElementToBeVisible(categoriesPageObj.Proceed);
 		testUtilObj.clickOnButton(categoriesPageObj.Proceed);
+		
+		//Delete Page
+		testUtilObj.clickOnButton(editItemsObj.editButton);
+		
+		
+		//checkout page
+		
+		testUtilObj.waitForElementToBeVisible(checkOutPageObj.checkoutText);
+		Assert.assertTrue(testUtilObj.textIsVisible(checkOutPageObj.checkoutText));
+		
 	}
 
 //	@Test(priority = 2)
